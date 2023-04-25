@@ -1,0 +1,14 @@
+.navbar-container{
+    position: absolute;
+    height: var(--item-height);
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+}
+
+.navbar-login{
+    display: flex;
+    margin-left: auto;
+    margin-right: 2rem;
+    align-items: center;
+}

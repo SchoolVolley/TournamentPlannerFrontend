@@ -14,6 +14,7 @@ import {NavLink} from "react-router-dom";
 import {ReactNode, useState} from "react";
 import "./sidebar.css"
 import CSS from 'csstype'
+import Navbar from "../navbar/Navbar";
 
 interface Props {
     children?: ReactNode
@@ -25,10 +26,10 @@ const Sidebar = ({children,...props}:Props) => {
     const [isOpen, setIsOpen] = useState(false)
 
     const styleOpen: CSS.Properties = {
-        width: '30vh'
+        width: '20rem'
     }
     const styleClosed: CSS.Properties = {
-        width: '8vh'
+        width: '4rem'
     }
 
     const menuItem = [
@@ -80,6 +81,8 @@ const Sidebar = ({children,...props}:Props) => {
                     ))
                 }
             </div>
+            <Navbar></Navbar>
+            <main>{children}</main>
         </div>
     );
 };

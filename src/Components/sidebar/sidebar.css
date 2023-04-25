@@ -1,28 +1,35 @@
-.sidebar-container{
-    position: absolute;
-    height: 100%;
-    width: 100%;
+.sidebar-container {
+    display: flex;
     overflow: hidden;
 }
-.sidebar{
-    padding-top: 8vh;
+
+main{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    height: 100vh;
+}
+
+.sidebar {
+    z-index: 100;
+    padding-top: var(--item-height);
     display: flex;
     flex-direction: column;
-    position: absolute;
-    height: 100%;
+    /*position: absolute;*/
+    height: 100vh;
     transition: all 0.15s;
     background-color: var(--space-cadet);
 }
 
-.sidebar-navlink{
-    height: 6vh;
+.sidebar-navlink {
+    height: var(--item-height);
     display: flex;
     color: var(--orange);
     text-decoration: none;
 
 }
 
-.sidebar-navlink-text{
+.sidebar-navlink-text {
     margin-top: 1.8vh;
     justify-self: center;
     justify-content: center;
@@ -32,7 +39,7 @@
     text-decoration: none;
 }
 
-.sidebar-navlink-icon{
+.sidebar-navlink-icon {
     margin-top: 1.5vh;
     margin-left: 2vh;
     justify-self: center;
@@ -40,6 +47,6 @@
     font-size: 30px;
 }
 
-.sidebar-navlink:hover{
+.sidebar-navlink:hover {
     background-color: var(--cool-gray);
 }

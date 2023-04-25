@@ -3,7 +3,7 @@ import "./settings.css"
 const Settings = () => {
     return (
         <div>
-
+            Settings
         </div>
     );
 };
