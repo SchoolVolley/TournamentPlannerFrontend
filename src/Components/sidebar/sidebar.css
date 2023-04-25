@@ -1,0 +1,45 @@
+.sidebar-container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.sidebar{
+    padding-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    transition: all 0.15s;
+    background-color: var(--space-cadet);
+}
+
+.sidebar-navlink{
+    height: 6vh;
+    display: flex;
+    color: var(--orange);
+    text-decoration: none;
+
+}
+
+.sidebar-navlink-text{
+    margin-top: 1.8vh;
+    justify-self: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.sidebar-navlink-icon{
+    margin-top: 1.5vh;
+    margin-left: 2vh;
+    justify-self: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.sidebar-navlink:hover{
+    background-color: var(--cool-gray);
+}
