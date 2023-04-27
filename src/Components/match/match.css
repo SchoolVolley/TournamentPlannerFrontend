@@ -8,7 +8,6 @@
     -moz-box-shadow: 0 0 9px 5px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 9px 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-
     display: flex;
     flex-direction: row;
     color: var(--space-cadet);
