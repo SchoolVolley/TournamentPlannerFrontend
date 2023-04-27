@@ -3,6 +3,7 @@
     height: var(--item-height);
     width: 100%;
     background-color: var(--container-background);
+    border-bottom: 3px solid var(--orange);
     display: flex;
 }
 

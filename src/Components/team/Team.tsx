@@ -1,9 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./team.css"
 import {AiOutlineTeam} from "react-icons/ai";
-const Team = () => {
+
+interface Props {
+    openPopUp: ()=>void;
+}
+
+const Team:React.FC<Props> = ({openPopUp}) => {
+
     return (
-        <div className="container-team-small">
+        <div className="container-team-small" onClick={openPopUp}>
             <div className="team-small-name">VC Hausmannstätten <hr/></div>
             <div className="team-small-short">VCH</div>
             <div className="team-small-mail">
