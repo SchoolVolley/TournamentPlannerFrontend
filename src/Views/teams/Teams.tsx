@@ -28,7 +28,7 @@ const Teams = () => {
                 <Team openPopUp={openPopUP}/>
             </div>
             {isOpen&&(
-                <TeamPopUp></TeamPopUp>
+                <TeamPopUp onClose={openPopUP}></TeamPopUp>
             )}
         </>
 

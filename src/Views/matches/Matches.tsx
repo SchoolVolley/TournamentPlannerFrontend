@@ -3,7 +3,7 @@ import "./matches.css"
 import Match from "../../Components/match/Match"
 const Matches = () => {
     return (
-        <div className="container-matches-main">
+        <div className="container container-matches">
         <Match/>
         <Match/>
         <Match/>
