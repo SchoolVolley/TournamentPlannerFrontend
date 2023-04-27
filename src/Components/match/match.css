@@ -1,0 +1,77 @@
+.container-matches{
+    width: 70rem;
+    background-color: white;
+    height: 25px;
+    margin: 2rem;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 9px 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 9px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 9px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    color: var(--space-cadet);
+}
+
+.team-one-name{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    width: 15rem;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.team-two-name{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 1rem;
+    margin-right: 7rem;
+    text-align: center;
+    width: 15rem;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.icon-versus{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.set-one{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.set-two{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.set-three{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.set-four{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.set-five{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+    margin-right: 2rem;
+    font-weight: bold;
+}

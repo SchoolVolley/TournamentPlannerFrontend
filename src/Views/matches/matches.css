@@ -1,0 +1,7 @@
+.container-matches-main{
+    /*display: flex;*/
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 30px;
+}
