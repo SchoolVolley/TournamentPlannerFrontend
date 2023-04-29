@@ -8,7 +8,7 @@ interface Props {
 
 const TeamPopUp:React.FC<Props>= ({onClose}) => {
     return (
-        <PopUpMenu dropShadow={true} height={50} width={50} onClose={onClose} >
+        <PopUpMenu dropShadow={true} height={50} width={70} onClose={onClose} >
 
         </PopUpMenu>
     );

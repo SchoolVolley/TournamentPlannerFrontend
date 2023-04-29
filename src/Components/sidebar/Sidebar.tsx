@@ -26,10 +26,12 @@ const Sidebar = ({children,...props}:Props) => {
     const [isOpen, setIsOpen] = useState(false)
 
     const styleOpen: CSS.Properties = {
-        width: '20rem'
+        width: '20rem',
+        minWidth: '20rem',
     }
     const styleClosed: CSS.Properties = {
-        width: '4rem'
+        width: '4rem',
+        minWidth: '4rem'
     }
 
     const menuItem = [

@@ -24,6 +24,13 @@
     background-color: var(--container-background);
 }
 
+.container-positioner{
+    width: 100%;
+    height: calc(100% -  calc(var(--item-height) + 2rem) );
+    max-height:calc(100% -  calc(var(--item-height) + 2rem) );
+    margin: calc(var(--item-height) + 1rem) 1rem 1rem;
+}
+
 .icon-small{
     font-size: 20px;
     width: 30px;
