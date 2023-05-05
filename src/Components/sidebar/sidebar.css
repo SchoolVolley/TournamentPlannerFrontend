@@ -21,6 +21,10 @@ main{
     background-color: var(--space-cadet);
 }
 
+.active{
+    background-color: var(--cool-gray);;
+}
+
 .sidebar-navlink {
     height: var(--item-height);
     display: flex;
