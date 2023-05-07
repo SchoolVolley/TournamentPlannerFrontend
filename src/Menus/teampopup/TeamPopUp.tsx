@@ -23,16 +23,53 @@ const TeamPopUp:React.FC<Props>= ({onClose}) => {
                     <div className={"team-leader-header"}>
                         Team leader
                     </div>
-                    <p>Firstname: Michael</p>
-                    <p>Lastname: Hubenauf</p>
-                    <p>Email: example@gmail.com</p>
+
+                    <table className={"table-leader"}>
+                        <thead>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Email</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Michael</td>
+                                <td>Hubenauf</td>
+                                <td>example@gmail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
-dfd
                 <div className={"container-games"}>
                     <div className={"team-leader-header"}>
                         Games
                     </div>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                </div>
+
+                <div className={"container-players"}>
+                    <div className={"team-leader-header"}>
+                        Players
+                    </div>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
                 </div>
 
             </div>
