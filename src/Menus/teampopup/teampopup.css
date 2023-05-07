@@ -10,12 +10,34 @@
     border-radius: 10px;
 }
 
-.table-leader{
+.container-team-leader table{
+    border: none;
+    table-layout: fixed;
+    width: 35rem;
+    border-spacing: 0;
+}
+
+.table-leader td{
+    width: 4rem;
     border: none;
 }
 
-.table-leader tr td{
-    width: 3rem;
+.table-leader th{
+    width: 4rem;
+    border: none;
+    border-bottom: solid black;
+}
+
+
+.games-data{
+    position: absolute;
+    margin-top: 3.5rem;
+    vertical-align: top;
+}
+
+.games-data p{
+    font-size: 20px;
+    margin-bottom: 0.3rem;
 }
 
 .container-games {
@@ -23,8 +45,8 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: left;
-    height: 65%;
     width: 46%;
+    height: 65%;
     padding-top: 20px;
     border: solid #e5eaf5;
     border-radius: 10px;
@@ -35,7 +57,6 @@
 }
 
 .container-players {
-    display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: left;
@@ -49,10 +70,46 @@
     padding-left: 0.5rem;
 }
 
+.player-data{
+    vertical-align: top;
+    width: 98%;
+    border-spacing: 0;
+}
+
+.player-data th{
+    position: sticky;
+    background-color: white;
+    z-index: 1;
+    top: 0;
+    border: none;
+    border-bottom: black solid;
+}
+
+
+.player-data tr:nth-child(odd) td{
+    border: none;
+    background-color: lightgrey;
+}
+
+.player-data tr:nth-child(even) td{
+    border: none;
+}
+
+
 .wrapper{
     width: 100%;
     height: 38rem;
     margin: 1rem;
+}
+
+.scroll-wrapper{
+    width: 100%;
+    height: 86%;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    overflow: auto;
 }
 
 .container-picture{
@@ -67,6 +124,7 @@
 .team-leader-header{
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    margin-bottom: 1rem;
     text-align: center;
     width: calc(100% - 1rem);
     font-size: 25px;

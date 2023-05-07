@@ -25,16 +25,16 @@ const TeamPopUp:React.FC<Props>= ({onClose}) => {
                     </div>
 
                     <table className={"table-leader"}>
-                        <thead>
-                            <th>Firstname</th>
-                            <th>Lastname</th>
-                            <th>Email</th>
-                        </thead>
                         <tbody>
                             <tr>
-                                <td>Michael</td>
-                                <td>Hubenauf</td>
-                                <td>example@gmail.com</td>
+                                <th>Michael</th>
+                                <th>Hubenauf</th>
+                                <th>example@gmail.com</th>
+                            </tr>
+                            <tr>
+                                <td>Firstname</td>
+                                <td>Lastname</td>
+                                <td>Email</td>
                             </tr>
                         </tbody>
                     </table>
@@ -44,32 +44,123 @@ const TeamPopUp:React.FC<Props>= ({onClose}) => {
                     <div className={"team-leader-header"}>
                         Games
                     </div>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    <div className={"games-data"}>
+                        <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                        <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                        <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+                    </div>
                 </div>
 
                 <div className={"container-players"}>
                     <div className={"team-leader-header"}>
                         Players
                     </div>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
-                    <p>VS: HTBLA Kaindorf 2 Est.Start Time: 12:00</p>
+
+                    <div className={"scroll-wrapper"}>
+                        <table className={"player-data"}>
+                            <thead>
+                            <th>ID</th>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Gender</th>
+                            </thead>
+
+                            <tbody>
+                            <tr>
+                                <td>815</td>
+                                <td>Hütter</td>
+                                <td>Nico</td>
+                                <td>Männlich</td>
+                            </tr>
+                            <tr>
+                                <td>815</td>
+                                <td>Hütter</td>
+                                <td>Nico</td>
+                                <td>Männlich</td>
+                            </tr>
+                            <tr>
+                                <td>815</td>
+                                <td>Hütter</td>
+                                <td>Nico</td>
+                                <td>Männlich</td>
+                            </tr>
+                            <tr>
+                                <td>815</td>
+                                <td>Hütter</td>
+                                <td>Nico</td>
+                                <td>Männlich</td>
+                            </tr>
+                            <tr>
+                                <td>815</td>
+                                <td>Hütter</td>
+                                <td>Nico</td>
+                                <td>Männlich</td>
+                            </tr>
+                            <tr>
+                                <td>815</td>
+                                <td>Hütter</td>
+                                <td>Nico</td>
+                                <td>Männlich</td>
+                            </tr>
+                            <tr>
+                                <td>815</td>
+                                <td>Hütter</td>
+                                <td>Nico</td>
+                                <td>Männlich</td>
+                            </tr>
+                            <tr>
+                                <td>815</td>
+                                <td>Hütter</td>
+                                <td>Nico</td>
+                                <td>Männlich</td>
+                            </tr>
+                            <tr>
+                                <td>815</td>
+                                <td>Hütter</td>
+                                <td>Nico</td>
+                                <td>Männlich</td>
+                            </tr>
+                            <tr>
+                                <td>815</td>
+                                <td>Hütter</td>
+                                <td>Nico</td>
+                                <td>Männlich</td>
+                            </tr>
+                            <tr>
+                                <td>815</td>
+                                <td>Hütter</td>
+                                <td>Nico</td>
+                                <td>Männlich</td>
+                            </tr>
+                            <tr>
+                                <td>815</td>
+                                <td>Hütter</td>
+                                <td>Nico</td>
+                                <td>Männlich</td>
+                            </tr>
+                            <tr>
+                                <td>815</td>
+                                <td>Hütter</td>
+                                <td>Nico</td>
+                                <td>Männlich</td>
+                            </tr>
+                            <tr>
+                                <td>815</td>
+                                <td>Hütter</td>
+                                <td>Nico</td>
+                                <td>Männlich</td>
+                            </tr>
+                            <tr>
+                                <td>815</td>
+                                <td>Hütter</td>
+                                <td>Nico</td>
+                                <td>Männlich</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
                 </div>
 
             </div>
