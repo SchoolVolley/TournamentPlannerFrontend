@@ -1,11 +1,17 @@
 import {FiMinus} from "react-icons/fi";
 import "./match.css"
+import React from "react";
+
+interface Props {
+    openPoPUp: ()=>void;
+}
 
 
-const Match  = () =>{
+
+const Match:React.FC<Props> = ({openPoPUp})  =>{
 
     return(
-        <div className="container-match">
+        <div className="container-match" onClick={openPoPUp}>
             <div className="team-one-name">HTBLA Kaindorf 1</div>
             <div className = "icon-versus"><FiMinus/></div>
             <div className="team-two-name">HTBLA Kaindorf 2</div>
