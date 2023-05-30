@@ -30,6 +30,9 @@ const PopUpMenu: React.FC<Props> = ({children, height, width, dropShadow,onClose
         marginLeft: 'calc(50vw - ' + width / 2 + 'rem)',
         marginTop: 'calc(50vh - ' + height / 2 + 'rem)'
     }
+    const clickOutside = () => {
+
+    }
 
     return (
         <div className="popupmenu-container-outer" style={styleOuter}>
