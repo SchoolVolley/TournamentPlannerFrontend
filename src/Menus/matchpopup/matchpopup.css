@@ -1,3 +1,22 @@
+.match-popup-teamone{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+.match.popup-picture{
+    height: 40px;
+    width: 60px;
+}
+
+.match-popup-teamtwo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: right;
+}
+
 .container-team-leader{
     display: flex;
     flex-wrap: wrap;
@@ -147,18 +166,4 @@
     border-width: 0;
     color: gray;
     background-color: var(--orange);
-}
-
-button {
-    background-color: lightgrey;
-    color: dimgrey;
-    border: none;
-    border-radius: 12px;
-    height: 1.5rem;
-    width: 4.5rem;
-    margin-left: 0.5rem;
-}
-
-.button-player{
-    width: 5rem;
 }

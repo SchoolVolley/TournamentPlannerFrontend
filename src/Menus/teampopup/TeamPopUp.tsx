@@ -22,7 +22,10 @@ const TeamPopUp:React.FC<Props>= ({onClose}) => {
                 <div className={"container-team-leader"}>
                     <div className={"team-leader-header"}>
                         Team leader
+                        <button className={"button-change"}>Change</button>
                     </div>
+
+
 
                     <table className={"table-leader"}>
                         <tbody>
@@ -54,6 +57,7 @@ const TeamPopUp:React.FC<Props>= ({onClose}) => {
                 <div className={"container-players"}>
                     <div className={"team-leader-header"}>
                         Players
+                        <button className={"button-player"}>Add Player</button>
                     </div>
 
                     <div className={"scroll-wrapper"}>
