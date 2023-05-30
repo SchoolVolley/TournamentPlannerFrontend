@@ -148,3 +148,17 @@
     color: gray;
     background-color: var(--orange);
 }
+
+button {
+    background-color: lightgrey;
+    color: dimgrey;
+    border: none;
+    border-radius: 12px;
+    height: 1.5rem;
+    width: 4.5rem;
+    margin-left: 0.5rem;
+}
+
+.button-player{
+    width: 5rem;
+}
