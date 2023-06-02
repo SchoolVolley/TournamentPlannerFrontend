@@ -1,25 +1,22 @@
 import {FiMinus} from "react-icons/fi";
 import "./match.css"
+import {DataMatch} from "../../Datatypes/MatchData";
 import React from "react";
 
-interface Props {
-    openPoPUp: ()=>void;
+interface PropsMatch {
+    match:DataMatch
 }
 
-
-
-const Match:React.FC<Props> = ({openPoPUp})  =>{
+const Match:React.FC<PropsMatch>  = ({match}) =>{
 
     return(
-        <div className="container-match" onClick={openPoPUp}>
-            <div className="team-one-name">HTBLA Kaindorf 1</div>
+        <div className="container-match">
+            <div className="team-one-name">{match.teamA.name}</div>
             <div className = "icon-versus"><FiMinus/></div>
-            <div className="team-two-name">HTBLA Kaindorf 2</div>
-            <div className="set set-one">25:14</div>
-            <div className="set set-two">25:18</div>
-            <div className="set set-three">23:25</div>
-            <div className="set set-four">25:27</div>
-            <div className="set set-five">25:19</div>
+            <div className="team-two-name">{match.teamB.name}</div>
+            {match.sets.map(set=>{
+                return <div className={"set"}>{set.apoints}:{set.bpoints}</div>
+            })}
 
         </div>
 
