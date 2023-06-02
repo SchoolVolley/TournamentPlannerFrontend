@@ -5,11 +5,24 @@ import {DataMatch} from "../../Datatypes/MatchData";
 import axios from 'axios'
 import dashboard from "../dashboard/Dashboard";
 import {Simulate} from "react-dom/test-utils";
+import TeamPopUp from "../../Menus/teampopup/TeamPopUp";
+import MatchPopUp from "../../Menus/matchpopup/MatchPopUp";
 
 
 const Matches = () => {
 
     const [matches,setMatches] = useState<DataMatch[]>();
+
+    const [isOpen,setIsOpen] = useState(false)
+
+    const openPopUP = () => {
+        if (isOpen) {
+            setIsOpen(false);
+        }
+        if (!isOpen) {
+            setIsOpen(true);
+        }
+    }
 
     useEffect(() => {
         axios.get('https://94aa34a6-d42b-4942-b73f-fe63b8ade8fb.mock.pstmn.io/getMatches')
@@ -23,11 +36,16 @@ const Matches = () => {
 
 
     return (
+        <>
         <div className="container container-matches">
             {matches?.map(match =>(
-                <Match match={match}></Match>
+                <Match match={match} openPopUp={openPopUP}></Match>
             ))}
         </div>
+            {isOpen&&(
+                <MatchPopUp onClose={openPopUP}></MatchPopUp>
+            )}
+        </>
     );
 };
 
