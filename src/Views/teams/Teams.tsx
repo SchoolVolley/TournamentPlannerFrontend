@@ -2,17 +2,29 @@ import React, {useState} from 'react';
 import "./teams.css"
 import Team from "../../Components/team/Team";
 import TeamPopUp from "../../Menus/teampopup/TeamPopUp";
+import AddTeamPopUp from "../../Menus/addteampopup/AddTeamPopUp";
 
 const Teams = () => {
 
-    const [isOpen,setIsOpen] = useState(false)
+    const [isTeamPopupOpen,setIsTeamPopupOpen] = useState(false)
+    const [isAddTeamPopupOpen,setIsAddTeamPopupOpen] = useState(true)
+
 
     const openPopUP = () => {
-        if (isOpen) {
-            setIsOpen(false);
+        if (isTeamPopupOpen) {
+            setIsTeamPopupOpen(false);
         }
-        if (!isOpen) {
-            setIsOpen(true);
+        if (!isTeamPopupOpen) {
+            setIsTeamPopupOpen(true);
+        }
+    }
+
+    function openAddTeamPopUp() {
+        if(isAddTeamPopupOpen) {
+            setIsAddTeamPopupOpen(false);
+        }
+        if(!isAddTeamPopupOpen) {
+            setIsAddTeamPopupOpen(true);
         }
     }
 
@@ -27,8 +39,12 @@ const Teams = () => {
                 <Team openPopUp={openPopUP}/>
                 <Team openPopUp={openPopUP}/>
             </div>
-            {isOpen&&(
+
+            {isTeamPopupOpen&&(
                 <TeamPopUp onClose={openPopUP}></TeamPopUp>
+            )}
+            {isAddTeamPopupOpen&& (
+                <AddTeamPopUp onClose={openAddTeamPopUp}></AddTeamPopUp>
             )}
         </>
 
