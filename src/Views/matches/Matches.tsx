@@ -24,8 +24,14 @@ const Matches = () => {
         }
     }
 
+    const config = {
+        headers:{
+            "Authorization":"Basic YWRtaW46U2Nob29sVm9sbGV5MjMhI2Nvb2w="
+        }
+    }
+
     useEffect(() => {
-        axios.get('https://94aa34a6-d42b-4942-b73f-fe63b8ade8fb.mock.pstmn.io/getMatches')
+        axios.get('https://jarthc20.uber.space/kainbackend/match/getall',config)
             .then(res => res.data as DataMatch[])
             .then(data =>{
                 setMatches(data);
