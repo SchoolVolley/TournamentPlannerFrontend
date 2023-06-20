@@ -31,7 +31,7 @@ const MatchPopUp:React.FC<Props>= ({onClose}) => {
                         <AiFillEdit/>
                     </div>
                     <div className={"container-center"}>
-                        <div className={"test-container-center"}>Max Mustermann</div>
+                        <div className={"test-container-center"}>Max Musterplatz</div>
                     </div>
                 </div>
                 <div className={"container-teamtwo-players"}>
@@ -76,13 +76,6 @@ const MatchPopUp:React.FC<Props>= ({onClose}) => {
                     </div>
 
                 </div>
-
-
-
-
-
-
-
 
         </PopUpMenu>
     );
