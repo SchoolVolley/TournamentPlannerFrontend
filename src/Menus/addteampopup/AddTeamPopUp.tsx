@@ -14,25 +14,24 @@ const AddTeamPopUp:React.FC<Props> = ({onClose}) => {
 
     const column1: CSS.Properties = {
         float: 'left',
-        width: '70%'
+        width: '60%'
     }
 
     const column2: CSS.Properties = {
         float: 'left',
-        width: '30%'
+        width: '40%'
     }
 
-    const table: CSS.Properties = {
+    const table3: CSS.Properties = {
         display: 'table',
         width: '100%'
     }
-
 
     return (
         <PopUpMenu width={55} height={40} dropShadow={true} onClose={onClose}>
             <div className={"team-popup-header"}>Add Team</div>
 
-            <div style={table}>
+            <div style={table3}>
                 <div style={column1}>
                     <div style={team_details}>Team details</div>
                     <form>
@@ -46,8 +45,6 @@ const AddTeamPopUp:React.FC<Props> = ({onClose}) => {
                 <div style={column2}>
                     <div style={team_details}>Team picture</div>
                 </div>
-
-
             </div>
         </PopUpMenu>
 

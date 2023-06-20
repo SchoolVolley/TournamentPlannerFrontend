@@ -11,8 +11,7 @@ const TeamPopUp:React.FC<Props>= ({onClose}) => {
         <PopUpMenu dropShadow={true} height={50} width={70} onClose={onClose} >
             <div className={"team-popup-header"}>VC Hausmannstätten <hr></hr></div>
 
-            <div className={"wrapper"}>
-
+            <div className={"wrapperDavid"}>
 
                 <div className={"container-picture"}>
                     <img className={"placeholder"} src={"https://upload.wikimedia.org/wikipedia/commons/3/3f/Placeholder_view_vector.svg"} alt={""}/>
@@ -25,9 +24,7 @@ const TeamPopUp:React.FC<Props>= ({onClose}) => {
                         <button className={"button-change"}>Change</button>
                     </div>
 
-
-
-                    <table className={"table-leader"}>
+                    <table className={"table-leader container-team-leader-table"}>
                         <tbody>
                             <tr>
                                 <th>Michael</th>
