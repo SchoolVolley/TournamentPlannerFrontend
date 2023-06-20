@@ -36,7 +36,6 @@ const MatchPopUp:React.FC<Props>= ({onClose}) => {
                 </div>
                 <div className={"container-teamtwo-players"}>
                     <div className={"text-containercenter-right"}>Players (Team Two)</div>
-
                 </div>
             </div>
                 <div className={"match-popup-game"}>
@@ -44,36 +43,36 @@ const MatchPopUp:React.FC<Props>= ({onClose}) => {
                         <div className={"container-set"}>
                             Set 1:
                         </div>
-                        <p className={"Winner-Set"}>Winner: HTBLA Kaindorf2</p>
-                        <p className={"Notes-Set"}>Notes: Unfair behavior from Team Two</p>
+                        <p className={"winner-set"}>Winner: HTBLA Kaindorf2</p>
+                        <p className={"notes-set"}>Notes: Unfair behavior from Team Two</p>
                     </div>
                     <div className={"match-popup-set"}>
                         <div className={"container-set"}>
                             Set 2:
                         </div>
-                        <p className={"Winner-Set"}>Winner: HTBLA Kaindorf1</p>
-                        <p className={"Notes-Set"}>Notes: -</p>
+                        <p className={"winner-set"}>Winner: HTBLA Kaindorf1</p>
+                        <p className={"notes-set"}>Notes: -</p>
                     </div><
                     div className={"match-popup-set"}>
                         <div className={"container-set"}>
                             Set 3:
                         </div>
-                        <p className={"Winner-Set"}>Winner: HTBLA Kaindorf1</p>
-                        <p className={"Notes-Set"}>Notes: -</p>
+                        <p className={"winner-set"}>Winner: HTBLA Kaindorf1</p>
+                        <p className={"notes-set"}>Notes: -</p>
                     </div>
                     <div className={"match-popup-set"}>
                         <div className={"container-set"}>
                             Set 4:
                         </div>
-                        <p className={"Winner-Set"}>Winner: HTBLA Kaindorf2</p>
-                        <p className={"Notes-Set"}>Notes: -</p>
+                        <p className={"winner-set"}>Winner: HTBLA Kaindorf2</p>
+                        <p className={"notes-set"}>Notes: -</p>
                     </div>
                     <div className={"match-popup-set"}>
                         <div className={"container-set"}>
                             Set 5:
                         </div>
-                        <p className={"Winner-Set"}>Winner: HTBLA Kaindorf2</p>
-                        <p className={"Notes-Set"}>Notes: Unfair behavior from Team One</p>
+                        <p className={"winner-set"}>Winner: HTBLA Kaindorf2</p>
+                        <p className={"notes-set"}>Notes: Unfair behavior from Team One</p>
                     </div>
 
                 </div>
